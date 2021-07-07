@@ -26,3 +26,7 @@ str = "Ruby,Python,PHP"
 str.insert(4, ",Java")
 puts str
 
+# 文字列の反転
+str = "プログラミング言語：ruby"
+p str.reverse
+
