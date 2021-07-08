@@ -62,3 +62,12 @@ print d.take(2)
 categories=["programming","php","python","ruby","python","programming"]
 puts ""
 print categories.group_by {|v|v}
+
+# select:配列の抽出
+array =[20, 21, 22, 23, 24, 25, 26]
+p array.select {|n| n % 3 == 0}
+
+# reject:条件に合致しない要素を集めて、新しい配列にして返す
+array =[20, 21, 22, 23, 24, 25, 26]
+p array. reject { |n| n % 3 == 0 }
+## => [20, 22, 23, 25, 26]
